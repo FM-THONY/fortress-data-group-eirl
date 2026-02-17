@@ -1,98 +1,222 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+<>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fortress Data Group</title>
+    <title>Fortress Data Group | Soluciones Tecnológicas</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/servicios.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-
 <body>
-  <header>
-    <nav>
-        <h1>Fortress Data Group EIRL</h1>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="pages/nosotros.html">Nosotros</a></li>
-            <li><a href="pages/servicios.html">Servicios</a></li>
-            <li><a href="pages/contactanos.html">Contáctanos</a></li>
-        </ul>
-    </nav>
-</header>
 
-<main>
-    <section id="inicio">
-        <h2>Soluciones tecnológicas y análisis de datos para tu negocio</h2>
-        <p>
-            En Fortress Data Group EIRL ayudamos a empresas a tomar mejores
-            decisiones mediante el uso de datos, tecnología e inteligencia artificial.
-        </p>
+    <header id="header">
+        <div class="container nav-container">
+            <div class="logo">
+                <h2>FORTRESS <span class="highlight">DATA</span></h2>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#contacto" class="btn-nav">Contacto</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1>Arquitectura Digital que <br> <span class="text-gradient">Desafía los Límites</span></h1>
+            <p>
+                En <strong>Fortress Data Group</strong> no solo programamos, construimos el ecosistema que tu empresa necesita para liderar. 
+                Fusionamos ingeniería de software de alto nivel con inteligencia de datos para transformar la complejidad en ventajas competitivas. 
+                Tu visión, blindada y potenciada por nuestra tecnología.
+            </p>
+            <a href="#contacto" class="btn-primary">Cotizar Proyecto <i class="fas fa-arrow-right"></i></a>
+        </div>
     </section>
 
-    <section id="servicios">
-        <h2>Nuestros Servicios</h2>
-        <article>
-            <h3>Business Intelligence y Analítica de Datos</h3>
-             <p>
-                   Transformamos datos en información clara y accionable mediante
-                   dashboards, reportes y análisis que apoyan la toma de decisiones estratégicas.
-             </p>
-        </article>
-
-        <article>
-            <h3>Soporte, mantenimiento y venta de hardware informático</h3>
-             <p>
-                   Brindamos soporte técnico especializado, mantenimiento preventivo
-                   y correctivo, así como asesoría y venta de equipos informáticos.
-             </p>
-        </article>
-  
-        <article>
-            <h3>Desarrollo web con Inteligencia Artificial</h3>
-             <p>
-                    Diseñamos y desarrollamos sitios web modernos integrando soluciones
-                    basadas en inteligencia artificial para mejorar la experiencia del usuario.
-             </p>
-        </article>
-
-        <article>
-            <h3>Automatización de tareas con Inteligencia Artificial</h3>
-             <p>
-                    Automatizamos procesos repetitivos mediante herramientas de IA,
-                    optimizando tiempos, reduciendo errores y aumentando la productividad.
-             </p>
-        </article>
-
-
+    <section id="nosotros" class="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nuestra Esencia</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <i class="fas fa-rocket icon-about"></i>
+                    <h3>Nuestra Misión</h3>
+                    <p>Democratizar la potencia tecnológica, convirtiendo los datos brutos en el activo más estratégico de nuestros socios, impulsando una evolución digital segura, escalable y sin fricciones.</p>
+                </div>
+                <div class="about-card">
+                    <i class="fas fa-eye icon-about"></i>
+                    <h3>Nuestra Visión</h3>
+                    <p>Ser el referente arquitectónico en la transformación digital de Latinoamérica, forjando un futuro donde la seguridad de la información y la excelencia en la experiencia de usuario convergen en una sola fortaleza.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <section id="servicios" class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Soluciones Integrales</h2>
+                <p>Ingeniería de precisión para desafíos modernos.</p>
+                <div class="underline"></div>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="icon-box">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Desarrollo de Aplicaciones Web y Móvil</h3>
+                    <p>Diseño y desarrollo de ecosistemas digitales a medida. Creamos interfaces intuitivas (UI/UX) respaldadas por un código robusto, optimizado para alto rendimiento y escalabilidad global.</p>
+                </div>
 
-    <section id="contacto">
-        <h2>Contáctanos</h2>
+                <div class="service-card">
+                    <div class="icon-box">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Data Analytics & Automatización</h3>
+                    <p>Transformamos el caos de datos en tableros de control estratégicos. Implementamos automatización inteligente para reducir tiempos operativos y maximizar la toma de decisiones basada en hechos.</p>
+                </div>
 
-        <form>
-            <label for="nombre">Nombres Completos:</label><br>
-            <input type="text" id="nombre" name="nombre" placeholder="Anthony Fernandez Mendoza" required><br><br>
-
-            <label for="correo">Correo Electrónico:</label><br>
-            <input type="email" id="correo" name="correo" placeholder="afernandez@fortressdg.com" required><br><br>
-
-            <label for="celular">Celular:</label><br>
-            <input type="tel" id="celular" name="celular" placeholder="986785410" required><br><br>
-
-            <label for="mensaje">Mensaje:</label><br>
-            <textarea id="mensaje" name="mensaje" placeholder="Deseo información de Desarrollo Web para mi negocio" required></textarea><br><br>
-
-            <button type="submit">Enviar</button>
-        </form>
+                <div class="service-card">
+                    <div class="icon-box">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Infraestructura y Soporte</h3>
+                    <p>Garantizamos tu continuidad operativa. Ofrecemos mantenimiento preventivo, soporte técnico especializado y suministro de equipamiento informático de vanguardia para mantener tu negocio siempre en línea.</p>
+                </div>
+                
+            </div>
+        </div>
     </section>
-</main>
 
-<footer>
-    <p>
-        @2026 Fortress Data Group EIRL - Todos los derechos reservados
-    </p>
-</footer>
+    <section id="testimonios" class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Ellos Confían en Nosotros</h2>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="carousel-container">
+                <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                
+                <div class="testimonial-slide active" data-id="1">
+                    <div class="client-content">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p class="review-text">"La capacidad de Fortress para interpretar nuestras necesidades y convertirlas en un dashboard automatizado nos ahorró un 40% en tiempos operativos. Son verdaderos socios estratégicos."</p>
+                        <div class="client-info">
+                            <h4>Ing. Carlos Méndez</h4>
+                            <span>Gerente de Operaciones | <strong>Logística Andina S.A.C.</strong></span>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="testimonial-slide" data-id="2">
+                    <div class="client-content">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p class="review-text">"Necesitábamos una app robusta para nuestros clientes financieros. El equipo de Fortress entregó una solución segura, rápida y con una interfaz impecable."</p>
+                        <div class="client-info">
+                            <h4>Lic. Fernanda Castillo</h4>
+                            <span>Directora de Innovación | <strong>Financiera Progrex</strong></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-slide" data-id="3">
+                    <div class="client-content">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p class="review-text">"El soporte en infraestructura que nos brindan es A1. Desde que gestionan nuestros equipos, las incidencias técnicas han desaparecido prácticamente."</p>
+                        <div class="client-info">
+                            <h4>Roberto Alarcón</h4>
+                            <span>CEO | <strong>Consorcio Retail Perú</strong></span>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                
+                <div class="contact-form-container">
+                    <h3>Inicia tu Transformación</h3>
+                    <p>Déjanos tus datos y un especialista te contactará a la brevedad.</p>
+                    <form action="#" class="contact-form">
+                        <div class="input-group">
+                            <input type="text" placeholder="Nombres" required>
+                            <input type="text" placeholder="Apellidos" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" placeholder="Correo Electrónico" required>
+                            <input type="tel" placeholder="Teléfono" required>
+                        </div>
+                        <input type="text" placeholder="Empresa / Organización" class="full-width">
+                        <textarea placeholder="Cuéntanos sobre tu proyecto o necesidad..." rows="5" required></textarea>
+                        <button type="submit" class="btn-primary full-width">Enviar Mensaje</button>
+                    </form>
+                </div>
+
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31214.66448408434!2d-77.09873566782354!3d-12.07834578135898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c9665c363f85%3A0x863640206b0d8768!2sSan%20Miguel%2C%20Per%C3%BA!5e0!3m2!1ses-419!2spe!4v1700000000000!5m2!1ses-419!2spe" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <h2>FORTRESS DATA</h2>
+                <p>Tu Socio en Tecnología, Transformando Ideas en Realidad Digital.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contacto</h4>
+                <p><i class="fas fa-map-marker-alt"></i> San Miguel, Lima - Perú</p>
+                <p><i class="fas fa-envelope"></i> contacto@fortressdatagroup.com</p>
+                <p><i class="fas fa-phone"></i> +51 919 748 528</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Fortress Data Group. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/slider-clientes.js"></script>
 </body>
 </html>
-

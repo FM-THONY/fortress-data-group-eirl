@@ -1,0 +1,21 @@
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Ocultar menu en movil por simplicidad en este demo */
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .input-group {
+        grid-template-columns: 1fr;
+    }
+    
+    .prev-btn { left: -10px; }
+    .next-btn { right: -10px; }
+}
