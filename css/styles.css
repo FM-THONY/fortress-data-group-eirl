@@ -95,7 +95,7 @@ header {
 /* HERO SECTION */
 .hero {
     height: 100vh;
-    background: url('https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+    background: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop') no-repeat center center/cover;
     display: flex;
     align-items: center;
     position: relative;
@@ -264,3 +264,146 @@ footer {
     color: #777;
 }
 
+/* --- 2. BOTÓN DE WHATSAPP FLOTANTE --- */
+.btn-wsp {
+    position: fixed; /* Se queda fijo aunque hagas scroll */
+    width: 60px;     /* Tamaño mediano y profesional */
+    height: 60px;
+    line-height: 60px; /* Centra el icono verticalmente */
+    bottom: 30px;    /* Distancia desde abajo */
+    right: 30px;     /* Distancia desde la derecha */
+    background: #25d366; /* El verde oficial de WhatsApp */
+    color: #fff;     /* Icono blanco */
+    border-radius: 50px; /* Redondo */
+    text-align: center;
+    font-size: 35px; /* Tamaño del icono dentro del botón */
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3); /* Sombra para que resalte */
+    z-index: 9999;   /* Asegura que siempre esté ENCIMA de todo lo demás */
+    transition: all 0.3s ease; /* Animación suave */
+}
+
+/* Efecto al pasar el mouse por el botón flotante */
+.btn-wsp:hover {
+    background: #20ba5a; /* Un verde un poco más oscuro */
+    text-decoration: none; /* Quita subrayados si los hubiera */
+    transform: scale(1.1); /* Crece un 10% al tocarlo */
+}
+
+/* Animación de "Latido" para llamar la atención (Opcional pero pro) */
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); }
+    70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+
+.btn-wsp {
+    animation: pulse 2s infinite; /* Hace que pulse infinitamente */
+}
+
+
+
+/* =========================================
+   ESTILOS REDES SOCIALES Y WHATSAPP FLOTANTE
+   ========================================= */
+
+/* --- 1. ICONOS EN EL FOOTER --- */
+.social-box {
+    margin-top: 25px; /* Separación de la lista de enlaces de arriba */
+}
+
+.social-box h4 {
+    font-size: 1rem;      /* Tamaño de letra moderado */
+    margin-bottom: 15px;  /* Espacio debajo del título "Síguenos" */
+    color: var(--accent-blue); /* Usamos tu color turquesa de la marca */
+}
+
+.social-icons {
+    display: flex; /* Pone los iconos uno al lado del otro */
+    gap: 15px;     /* Espacio entre cada icono */
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;       /* Ancho del círculo */
+    height: 40px;      /* Alto del círculo */
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo transparente sutil */
+    border-radius: 50%; /* Lo hace perfectamente redondo */
+    color: var(--white); /* Color del icono */
+    transition: all 0.3s ease; /* Suaviza la animación al pasar el mouse */
+}
+
+/* Efecto al pasar el mouse por encima de los iconos del footer */
+.social-icon:hover {
+    background-color: var(--accent-blue); /* Se pinta del color de tu marca */
+    color: var(--primary-blue); /* El icono cambia a azul oscuro */
+    transform: translateY(-3px); /* Se eleva un poquito (efecto flotar) */
+}
+
+
+
+
+
+/* =========================================
+   AJUSTE DE FLECHAS EN TESTIMONIOS
+   (Pega esto al final de tu css/style.css)
+   ========================================= */
+
+/* 1. Damos espacio a los lados del carrusel para que entren las flechas */
+.carousel-container {
+    position: relative;
+    /* Aumentamos el padding lateral de 20px a 70px */
+    /* Esto crea un "carril" vacío a la izquierda y derecha para las flechas */
+    padding: 0 70px; 
+    max-width: 900px; /* Limitamos el ancho para que el texto no se estire demasiado */
+    margin: 0 auto;   /* Centramos todo el bloque */
+    overflow: visible; /* Importante para que las flechas no se corten si salen del borde */
+}
+
+/* 2. Ajustamos el botón de la IZQUIERDA */
+.prev-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /* Centrado vertical perfecto */
+    /* Lo movemos bien a la izquierda, lejos del texto */
+    left: 10px; 
+    
+    /* Estilos visuales para que se vea botón pro */
+    background: transparent;
+    border: 2px solid var(--accent-blue); /* Borde del color de tu marca */
+    color: var(--accent-blue);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%; /* Círculo perfecto */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10; /* Asegura que esté encima de todo */
+}
+
+/* 3. Ajustamos el botón de la DERECHA */
+.next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    /* Lo movemos bien a la derecha, lejos del texto */
+    right: 10px; 
+
+    /* Mismos estilos visuales */
+    background: transparent;
+    border: 2px solid var(--accent-blue);
+    color: var(--accent-blue);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+/* 4. Efecto al pasar el mouse por las flechas */
+.prev-btn:hover, .next-btn:hover {
+    background: var(--accent-blue);
+    color: var(--primary-blue); /* Cambio de color al tocarlo */
+    transform: translateY(-50%) scale(1.1); /* Crece un poquito */
+}
